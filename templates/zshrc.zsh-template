@@ -32,8 +32,21 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(apache2-macports autojump capistrano composer cp git-extras git github macports mygrants osx terminalapp)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# Set specific PATH
+export PATH=/opt/local/lib/percona/bin:/opt/local/lib/mysql/bin:/opt/local/apache2/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/Scripts
+
+
+# Not sure if this is needed
+# @link https://github.com/robbyrussell/oh-my-zsh/issues/1348
+#autoload -Uz compinit
+#compinit
+
+[[ -s /opt/local/etc/profile.d/autojump.zsh ]] && source /opt/local/etc/profile.d/autojump.zsh
+
+
